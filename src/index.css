@@ -16,7 +16,7 @@ body{
 }
 
 .bgImage{
-  background-image: url("./assets/images/banner.png");
+  background-image: url("./assets/img/banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
