@@ -4,18 +4,39 @@
 
 @font-face {
   font-family: Tanha;
-  src: url('./assets/font/Tanha.eot');
-  src: url('./assets/font/Tanha.eot?#iefix') format('embedded-opentype'),
-       url('./assets/font/Tanha.woff') format('woff'),
-       url('./assets/font/Tanha.ttf') format('truetype');
+  src: url("./assets/font/Tanha.eot");
+  src: url("./assets/font/Tanha.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/Tanha.woff") format("woff"),
+    url("./assets/font/Tanha.ttf") format("truetype");
   font-weight: normal;
 }
 
-body{
-  font-family: 'Tanha';
+@layer base {
+  body {
+    @apply bg-gray-200;
+  }
+  .dropdown {
+    @apply w-full lg:max-w-[296px] cursor-pointer;
+  }
+  .dropdown-btn {
+    @apply flex h-[64px] items-center px-[18px] border rounded-lg;
+  }
+  .dropdown-icon-primary {
+    @apply text-2xl mr-[18px] text-red-500;
+  }
+  .dropdown-icon-secondary {
+    @apply text-2xl text-red-500 ml-auto;
+  }
+  .dropdown-menu {
+    @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-gray-950 absolute w-full z-10 list-none rounded-b-lg;
+  }
 }
 
-.bgImage{
+body {
+  font-family: "Tanha";
+}
+
+.bgImage {
   background-image: url("./assets/img/banner.jpg");
   background-position: center;
   background-size: cover;
@@ -24,17 +45,15 @@ body{
   height: 100%;
 }
 
-
-@keyframes spin{
-  from{
-      transform:rotate(0deg);
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  to{
-      transform:rotate(360deg);
+  to {
+    transform: rotate(360deg);
   }
 }
 
-.spin{
+.spin {
   animation: spin 40s linear infinite;
 }
-

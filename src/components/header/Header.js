@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <header className='py-6 mb-12 border-b'>
+    <header className='py-6 mb-2 border-b'>
         <div className='container mx-auto flex justify-between items-center'>
           <Link to='/'>
             <img src='https://cdn.jabama.com/original/statics/desktop/img/jabama-logo-dark.5cca32e.svg' className='w-15'/>
